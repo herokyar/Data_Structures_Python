@@ -19,4 +19,4 @@ def hotPotato(namelist, num):
     return simqueue.dequeue()
 
 #test the code
-hotPotato(["Bill","David","Susan","Jane","Kent","Brad"],1)
+hotPotato(["Anna","Chelsea","Jean","Jane","Aaron","Tom"],1)
