@@ -1,4 +1,4 @@
-#implementation of a Python queue class 
+#implementation of a Python queue data structure 
 
 
 class Queue:
