@@ -47,10 +47,6 @@ class Task:
         
 
 
-from pythonds.basic.queue import Queue
-
-import random
-
 def simulation(numSeconds, pagesPerMinute):
     
     labprinter = Printer(pagesPerMinute)
