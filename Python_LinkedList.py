@@ -76,6 +76,21 @@ class UnorderedList:
             self.head = current.getNext()
         else:
             previous.setNext(current.getNext())
+            
+    def append(self,item):
+        
+        current = self.head
+        found = False
+                         
+        while not found:
+            if current.getNext() != None:
+                current = current.getNext()
+            else:
+                found = True
+        
+        temp = Node(item) #create a new node
+        current.setNext(temp) #point to the appended node
+        
                 
                 
 
@@ -88,3 +103,5 @@ print(mylist.size())  #get the size
 print(mylist.search(93)) #search for item
 
 mylist.remove(54) #remove item from the linked list
+
+mylist.append(10) #append to the end of the linked list
