@@ -92,6 +92,26 @@ class UnorderedList:
         current.setNext(temp) #point to the appended node
         
                 
+
+    
+    def pop(self):
+        current = self.head
+        previous = None
+        found = False
+    
+        while not found:
+            if current.getNext() == None:
+                found = True
+            else:
+                previous = current
+                current = current.getNext()
+                
+        if previous == None:
+            self.head = current.getNext()
+            return current.getData()
+        else:
+            previous.setNext(current.getNext())
+            return current.getData()
                 
 
 #test the linked list
@@ -105,3 +125,5 @@ print(mylist.search(93)) #search for item
 mylist.remove(54) #remove item from the linked list
 
 mylist.append(10) #append to the end of the linked list
+
+mylist.pop() #pop the latest element from the linked list and return the value
