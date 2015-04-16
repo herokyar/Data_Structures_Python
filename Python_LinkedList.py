@@ -80,7 +80,7 @@ class UnorderedList:
     def append(self,item):
         
         current = self.head
-        found = False
+        found = False #to find the last element in the linked list
                          
         while not found:
             if current.getNext() != None:
