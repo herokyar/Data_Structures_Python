@@ -1,5 +1,8 @@
 #python hash table implementation (linear)
 #search complexity big-O(1) if there is no collision :)))
+#if λ is small, then there is a lower chance of collisions, meaning that items are more likely
+#to be in the slots where they belong.
+#If λ is large, meaning that the table is filling up, then there are more and more collisions. 
 
 class HashTable:
     
